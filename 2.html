@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/facb2e698a.js" crossorigin="anonymous"></script>
+    <script>
+        $('.btn').click(function() {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        })
+    </script>
+    <style>
+        .btn {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            background: #1b1b1b;
+            height: 45px;
+            width: 45px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: left 0.4s ease;
+        }
+        
+        .btn i {
+            color: white;
+            font-size: 28px;
+            line-height: 45px;
+        }
+        
+        .btn.click i:before {
+            content: '\f00d';
+        }
+        
+        .btn.click {
+            left: 230px;
+        }
+        
+        .sidebar {
+            position: fixed;
+            width: 215px;
+            height: 100%;
+            left: -250px;
+            background-color: #1b1b1b;
+            transition: left 0.4s ease;
+        }
+        
+        .sidebar.show {
+            left: 0px;
+        }
+        
+        .sidebar .text {
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 65px;
+            text-align: center;
+            background: #1e1e1e;
+            letter-spacing: 1px;
+        }
+        
+        nav ul {
+            background-color: #1b1b1b;
+            height: 100%;
+            width: 82%;
+            list-style: none;
+        }
+        
+        nav ul li {
+            line-height: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding-left: 40px;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            border-left: 3px solid transparent;
+        }
+        
+        nav ul li a:hover {
+            color: cyan;
+            background: #1e1e1e;
+            border-left-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Side Menu</div>
+        <ul>
+            <li><a href="/index.html">Start</a></li>
+            <li><a href="/geography/geo.html">Geography</a></li>
+            <li><a href="/culture/culture.html">Culture</a></li>
+            <li><a href="/history/history.html">History</a></li>
+            <li><a href="/trends/trend.html">Current Trends</a></li>
+            <li><a href="/topic/topic.html">Self-chosen Topic</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

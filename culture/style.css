@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    font-family: Roboto Mono, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.background {
+    background: url(/images/NY.jpg) fixed;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid #666666;
+    border-radius: 50px;
+    background-color: #666666;
+    box-shadow: 2px 2px 5px #000000;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+p {
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 3vh;
+    margin-bottom: 10vh;
+    color: white;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+}
+
+img {
+    margin-left: 35vw;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 25vh;
+}
+
+.back {
+    text-decoration: none;
+    color: black;
+    border: 3px solid #666666;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #666666;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    font-size: 4vh;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.back:hover {
+    box-shadow: 10px 10px 7px #000000;
+    text-shadow: 2px 2px 10px #000000;
+    transform: translateY(-25px);
+}
+
+.backk {
+    margin-bottom: 100px;
+}
+
+.btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: #1b1b1b;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.btn i {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.btn.click i:before {
+    content: '\f00d';
+}
+
+.btn.click {
+    left: 230px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 215px;
+    height: 100%;
+    left: -250px;
+    background-color: #1b1b1b;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show {
+    left: 0px;
+}
+
+.sidebar .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 82%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.top {
+    color: transparent;
+}
+
+.bot {
+    color: transparent;
+    
+}
+
+.bott {
+    color: transparent; 
+}

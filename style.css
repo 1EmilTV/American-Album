@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    font-family: Roboto Mono, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.background {
+    background: url(/images/NY.jpg);
+}
+
+.menu {
+    background: transparent;
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 550px;
+    margin-top: 15px;
+    color: white;
+    text-shadow: 2.5px 1px #666666;
+    margin-bottom: 0;
+    margin-left: 6vw;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    color: white;
+    text-shadow: 2.5px 1px #666666;
+}
+
+.btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background: #1b1b1b;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.btn i {
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.btn.click i:before {
+    content: '\f00d';
+}
+
+.btn.click {
+    left: 230px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 215px;
+    height: 100%;
+    left: -250px;
+    background-color: #1b1b1b;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show {
+    left: 0px;
+}
+
+.sidebar .text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #1e1e1e;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 82%;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 28vh;
+    transition: justify-content 0.4s ease;
+}
+
+.cards.hide {
+    justify-content: flex-end;
+}
+
+.card1 {
+    border: 7px solid #666666;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background: #000000;
+}
+
+.card1 .centered1 {
+    transition: top 0.4s ease;
+}
+
+.card1:hover .card111{
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.card1 .d1 {
+    transition: color 0.4s ease;
+}
+
+.card1:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background: #ff0000;
+}
+
+.card1:hover .centered1 {
+    top: 35%;
+    transition: top 0.4s ease;
+}
+
+.card1:hover .d1 {
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.card1:hover .card11 {
+    background-color: #ff0000;
+    opacity: 1;
+}
+
+.containercard1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottomr1 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d1 {
+    font-size: 20px;
+    color: transparent;
+}
+
+.d2 {
+    color: white; 
+    font-size: 10px;
+}
+
+.d3 {
+    color: white;
+    font-size: 30px;
+}
+
+.d21 {
+    color: white;
+    font-size: 10px;
+}
+
+.card2 {
+    margin-left: 10px;
+    border: 7px solid #666666;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background-color: black;
+}
+
+.card2 .centered2 {
+    transition: top 0.4s ease;
+}
+
+.card2:hover .card222{
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.card2 .f1 {
+    transition: color 0.4s ease;
+}
+
+.card2:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background: #ff0000;
+}
+
+.card2:hover .centered2 {
+    top: 35%;
+    transition: top 0.4s ease;
+}
+
+.card2:hover .f1 {
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.card2:hover .card22 {
+    background-color: #ff0000;
+    opacity: 1;
+}
+
+.card2:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background-color: #ff0000;
+}
+
+.containercard2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered2 {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f1 {
+    color: transparent;
+    font-size: 20px;
+}
+
+.f3 {
+    color: #ffffff;
+    font-size: 30px;
+
+}
+
+.card3 {
+    margin-left: 10px;
+    border: 7px solid #666666;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background-color: black;
+}
+
+.card3 .centered3 {
+    transition: top 0.4s ease;
+}
+
+.card3:hover .card333{
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.card3 .g3 {
+    transition: color 0.4s ease;
+}
+
+.card3:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background: #ff0000;
+}
+
+.card3:hover .centered3 {
+    top: 35%;
+    transition: top 0.4s ease;
+}
+
+.card3:hover .g1 {
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.card3:hover .card33 {
+    background-color: #ff0000;
+    opacity: 1;
+}
+
+.card3:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background-color: #ff0000;
+}
+
+.containercard3 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered3 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.g1 {
+    color: transparent; 
+    font-size: 20px;
+}
+
+.g3 {
+    color: white;
+    font-size: 30px;
+}
+
+.card4 {
+    margin-left: 10px;
+    border: 7px solid #666666;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background-color: black;
+}
+
+.card4 .centered4 {
+    transition: top 0.4s ease;
+}
+
+.card4:hover .card444{
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.card4 .h1 {
+    transition: color 0.4s ease;
+}
+
+.card4:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background: #ff0000;
+}
+
+.card4:hover .centered4 {
+    top: 35%;
+    transition: top 0.4s ease;
+}
+
+.card4:hover .h1 {
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.card4:hover .card44 {
+    background-color: #ff0000;
+    opacity: 1;
+}
+
+.card4:hover {
+    background-color: #ff0000;
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+}
+
+.containercard4 {
+    position: relative;
+    text-align: center;
+}
+
+.centered4 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1 {
+    color: transparent; 
+    font-size: 20px;
+}
+
+.h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.card5 {
+    margin-left: 10px;
+    border: 7px solid #666666;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    background-color: black;
+}
+
+.card5 .centered5 {
+    transition: top 0.4s ease;
+}
+
+.card5:hover .card555{
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+.card5 .j5 {
+    transition: color 0.4s ease;
+}
+
+.card5:hover {
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+    background: #ff0000;
+}
+
+.card5:hover .centered5 {
+    top: 35%;
+    transition: top 0.4s ease;
+}
+
+.card5:hover .j1 {
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.card5:hover .card55 {
+    background-color: #ff0000;
+    opacity: 1;
+}
+
+.card5:hover {
+    background-color: #ff0000;
+    transform: translateY(-35px);
+    transition: transform 0.4s ease;
+}
+
+.containercard5 {
+    position: relative;
+    text-align: center;
+}
+
+.centered5 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.j1 {
+    color: transparent; 
+    font-size: 20px;
+}
+
+.j3 {
+    color: white;
+    font-size: 30px;
+}
